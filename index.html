@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Simple Blog</h1>
+            <p>Write your thoughts. Save your stories.</p>
+        </header>
+
+        <section class="editor">
+            <h2>Create a Post</h2>
+
+            <form id="blogForm">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter post title"
+                    required
+                    maxlength="150"
+                >
+
+                <textarea
+                    id="content"
+                    placeholder="Write your blog post here..."
+                    required
+                    rows="5"
+                ></textarea>
+
+                <button type="submit">Publish Post</button>
+            </form>
+        </section>
+
+        <section class="posts-section">
+            <h2>Published Posts</h2>
+            <div id="postsContainer"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
